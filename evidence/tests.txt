@@ -1,0 +1,18 @@
+$ make test
+bash tests/run_tests.sh
+PASS  T1 normal exit (code 0)
+PASS  T2 exit status collected (42)
+PASS  T3 exec failure detected
+PASS  T4 SIGSEGV detected
+PASS  T5 SIGABRT detected
+PASS  T6 timeout -> SIGTERM
+PASS  T7 escalation to SIGKILL
+PASS  T8 under limit not killed
+PASS  T9 empty command rejected
+PASS  T10 child ppid == supervisor pid
+PASS  T11 all children reaped
+PASS  T12 invalid option rejected
+PASS  T13 Ctrl+C escalates to SIGKILL
+PASS  T14 no zombie while running
+----------------------------------------
+Passed: 14   Failed: 0

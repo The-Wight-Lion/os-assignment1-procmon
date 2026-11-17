@@ -1,0 +1,8 @@
+2026-11-17 11:18:58.338 | START      | pid=20120  ppid=19945  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:18:58.338 | CREATED    | pid=20122  ppid=20120  | cmd="./bin/workload exit 0"
+2026-11-17 11:18:58.338 | EXEC_OK    | pid=20122  ppid=20120  | program image replaced by "./bin/workload exit 0"
+2026-11-17 11:18:58.338 | CREATED    | pid=20123  ppid=20120  | cmd="./bin/workload sleep 2"
+2026-11-17 11:18:58.339 | EXEC_OK    | pid=20123  ppid=20120  | program image replaced by "./bin/workload sleep 2"
+2026-11-17 11:18:58.339 | EXITED     | pid=20122  ppid=20120  | normal termination, exit code=0, duration=0.002s
+2026-11-17 11:19:00.355 | EXITED     | pid=20123  ppid=20120  | normal termination, exit code=0, duration=2.016s
+2026-11-17 11:19:00.355 | FINISH     | pid=20120  ppid=19945  | all 2 children reaped, no zombies left

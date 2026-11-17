@@ -1,0 +1,24 @@
+$ ./bin/procmon -l logs/exp2.log "./bin/workload tree 3 4" "./bin/workload cpu 4" "./bin/workload sleep 4"
+2026-11-17 11:19:02.488 | START      | pid=20177  ppid=20175  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:19:02.488 | CREATED    | pid=20178  ppid=20177  | cmd="./bin/workload tree 3 4"
+2026-11-17 11:19:02.489 | EXEC_OK    | pid=20178  ppid=20177  | program image replaced by "./bin/workload tree 3 4"
+2026-11-17 11:19:02.489 | CREATED    | pid=20179  ppid=20177  | cmd="./bin/workload cpu 4"
+    [workload] mode=tree pid=20178 ppid=20177
+    [grandchild] pid=20180 ppid=20178
+    [grandchild] pid=20182 ppid=20178
+    [grandchild] pid=20181 ppid=20178
+2026-11-17 11:19:02.489 | EXEC_OK    | pid=20179  ppid=20177  | program image replaced by "./bin/workload cpu 4"
+2026-11-17 11:19:02.490 | CREATED    | pid=20183  ppid=20177  | cmd="./bin/workload sleep 4"
+    [workload] mode=cpu pid=20179 ppid=20177
+2026-11-17 11:19:02.490 | EXEC_OK    | pid=20183  ppid=20177  | program image replaced by "./bin/workload sleep 4"
+    [workload] mode=sleep pid=20183 ppid=20177
+2026-11-17 11:19:06.506 | EXITED     | pid=20178  ppid=20177  | normal termination, exit code=0, duration=4.018s
+2026-11-17 11:19:06.506 | EXITED     | pid=20179  ppid=20177  | normal termination, exit code=0, duration=4.018s
+2026-11-17 11:19:06.506 | EXITED     | pid=20183  ppid=20177  | normal termination, exit code=0, duration=4.017s
+2026-11-17 11:19:06.506 | FINISH     | pid=20177  ppid=20175  | all 3 children reaped, no zombies left
+
+PID     COMMAND                            RESULT     CODE   TIME(s)  
+------- ---------------------------------- ---------- ------ ---------
+20178   ./bin/workload tree 3 4            EXITED     0      4.018    
+20179   ./bin/workload cpu 4               EXITED     0      4.018    
+20183   ./bin/workload sleep 4             EXITED     0      4.017    

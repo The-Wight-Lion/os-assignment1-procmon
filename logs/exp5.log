@@ -1,0 +1,17 @@
+2026-11-17 11:19:15.806 | START      | pid=20253  ppid=20127  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:19:15.806 | CREATED    | pid=20254  ppid=20253  | cmd="./bin/workload sleep 1"
+2026-11-17 11:19:15.807 | EXEC_OK    | pid=20254  ppid=20253  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 11:19:15.807 | CREATED    | pid=20255  ppid=20253  | cmd="./bin/workload sleep 1"
+2026-11-17 11:19:15.807 | EXEC_OK    | pid=20255  ppid=20253  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 11:19:15.807 | CREATED    | pid=20256  ppid=20253  | cmd="./bin/workload sleep 1"
+2026-11-17 11:19:15.807 | EXEC_OK    | pid=20256  ppid=20253  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 11:19:15.807 | CREATED    | pid=20257  ppid=20253  | cmd="./bin/workload sleep 1"
+2026-11-17 11:19:15.808 | EXEC_OK    | pid=20257  ppid=20253  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 11:19:15.808 | CREATED    | pid=20258  ppid=20253  | cmd="./bin/workload sleep 1"
+2026-11-17 11:19:15.808 | EXEC_OK    | pid=20258  ppid=20253  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 11:19:16.828 | EXITED     | pid=20254  ppid=20253  | normal termination, exit code=0, duration=1.022s
+2026-11-17 11:19:16.828 | EXITED     | pid=20255  ppid=20253  | normal termination, exit code=0, duration=1.022s
+2026-11-17 11:19:16.828 | EXITED     | pid=20256  ppid=20253  | normal termination, exit code=0, duration=1.021s
+2026-11-17 11:19:16.828 | EXITED     | pid=20257  ppid=20253  | normal termination, exit code=0, duration=1.021s
+2026-11-17 11:19:16.828 | EXITED     | pid=20258  ppid=20253  | normal termination, exit code=0, duration=1.020s
+2026-11-17 11:19:16.828 | FINISH     | pid=20253  ppid=20127  | all 5 children reaped, no zombies left

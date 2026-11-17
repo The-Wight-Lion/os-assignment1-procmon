@@ -1,0 +1,35 @@
+$ ./bin/procmon -l logs/exp1.log "./bin/workload cpu 2" "./bin/workload sleep 2" "./bin/workload exit 3" ./bin/no_such_prog "./bin/workload segv" "./bin/workload abort"
+2026-11-17 11:19:00.372 | START      | pid=20130  ppid=20127  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:19:00.372 | CREATED    | pid=20131  ppid=20130  | cmd="./bin/workload cpu 2"
+2026-11-17 11:19:00.373 | EXEC_OK    | pid=20131  ppid=20130  | program image replaced by "./bin/workload cpu 2"
+2026-11-17 11:19:00.373 | CREATED    | pid=20132  ppid=20130  | cmd="./bin/workload sleep 2"
+    [workload] mode=cpu pid=20131 ppid=20130
+2026-11-17 11:19:00.373 | EXEC_OK    | pid=20132  ppid=20130  | program image replaced by "./bin/workload sleep 2"
+2026-11-17 11:19:00.373 | CREATED    | pid=20133  ppid=20130  | cmd="./bin/workload exit 3"
+    [workload] mode=sleep pid=20132 ppid=20130
+2026-11-17 11:19:00.373 | EXEC_OK    | pid=20133  ppid=20130  | program image replaced by "./bin/workload exit 3"
+2026-11-17 11:19:00.373 | CREATED    | pid=20134  ppid=20130  | cmd="./bin/no_such_prog"
+2026-11-17 11:19:00.373 | EXEC_FAIL  | pid=20134  ppid=20130  | cmd="./bin/no_such_prog" error=No such file or directory
+    [workload] mode=exit pid=20133 ppid=20130
+2026-11-17 11:19:00.373 | CREATED    | pid=20135  ppid=20130  | cmd="./bin/workload segv"
+2026-11-17 11:19:00.373 | EXEC_OK    | pid=20135  ppid=20130  | program image replaced by "./bin/workload segv"
+2026-11-17 11:19:00.373 | CREATED    | pid=20136  ppid=20130  | cmd="./bin/workload abort"
+    [workload] mode=segv pid=20135 ppid=20130
+2026-11-17 11:19:00.374 | EXEC_OK    | pid=20136  ppid=20130  | program image replaced by "./bin/workload abort"
+2026-11-17 11:19:00.374 | EXITED     | pid=20133  ppid=20130  | normal termination, exit code=3, duration=0.001s
+2026-11-17 11:19:00.374 | REAPED     | pid=20134  ppid=20130  | exec failed (No such file or directory), exit code=127, duration=0.001s
+    [workload] mode=abort pid=20136 ppid=20130
+2026-11-17 11:19:01.459 | SIGNALED   | pid=20135  ppid=20130  | abnormal termination by signal 11 (Segmentation fault), core dumped, duration=1.086s
+2026-11-17 11:19:02.385 | EXITED     | pid=20131  ppid=20130  | normal termination, exit code=0, duration=2.013s
+2026-11-17 11:19:02.385 | EXITED     | pid=20132  ppid=20130  | normal termination, exit code=0, duration=2.012s
+2026-11-17 11:19:02.486 | SIGNALED   | pid=20136  ppid=20130  | abnormal termination by signal 6 (Aborted), core dumped, duration=2.112s
+2026-11-17 11:19:02.486 | FINISH     | pid=20130  ppid=20127  | all 6 children reaped, no zombies left
+
+PID     COMMAND                            RESULT     CODE   TIME(s)  
+------- ---------------------------------- ---------- ------ ---------
+20131   ./bin/workload cpu 2               EXITED     0      2.013    
+20132   ./bin/workload sleep 2             EXITED     0      2.012    
+20133   ./bin/workload exit 3              EXITED     3      0.001    
+20134   ./bin/no_such_prog                 EXEC_FAIL  127    0.001    
+20135   ./bin/workload segv                SIGNALED   11     1.086    
+20136   ./bin/workload abort               SIGNALED   6      2.112    

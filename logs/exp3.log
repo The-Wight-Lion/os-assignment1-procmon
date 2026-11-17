@@ -1,0 +1,18 @@
+2026-11-17 11:19:06.508 | START      | pid=20208  ppid=20127  | procmon supervisor started, timeout=2.00s, mode=concurrent
+2026-11-17 11:19:06.509 | CREATED    | pid=20209  ppid=20208  | cmd="./bin/workload sleep 1"
+2026-11-17 11:19:06.509 | EXEC_OK    | pid=20209  ppid=20208  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 11:19:06.509 | CREATED    | pid=20210  ppid=20208  | cmd="./bin/workload cpu 10"
+2026-11-17 11:19:06.509 | EXEC_OK    | pid=20210  ppid=20208  | program image replaced by "./bin/workload cpu 10"
+2026-11-17 11:19:06.509 | CREATED    | pid=20211  ppid=20208  | cmd="./bin/workload hang"
+2026-11-17 11:19:06.509 | EXEC_OK    | pid=20211  ppid=20208  | program image replaced by "./bin/workload hang"
+2026-11-17 11:19:06.510 | CREATED    | pid=20212  ppid=20208  | cmd="./bin/workload tree 2 30"
+2026-11-17 11:19:06.510 | EXEC_OK    | pid=20212  ppid=20208  | program image replaced by "./bin/workload tree 2 30"
+2026-11-17 11:19:07.515 | EXITED     | pid=20209  ppid=20208  | normal termination, exit code=0, duration=1.006s
+2026-11-17 11:19:08.519 | TIMEOUT    | pid=20210  ppid=20208  | ran 2.01s > limit 2.00s, sending SIGTERM to group 20210
+2026-11-17 11:19:08.519 | TIMEOUT    | pid=20211  ppid=20208  | ran 2.01s > limit 2.00s, sending SIGTERM to group 20211
+2026-11-17 11:19:08.519 | TIMEOUT    | pid=20212  ppid=20208  | ran 2.01s > limit 2.00s, sending SIGTERM to group 20212
+2026-11-17 11:19:08.540 | SIGNALED   | pid=20210  ppid=20208  | abnormal termination by signal 15 (Terminated) [TIMEOUT], duration=2.031s
+2026-11-17 11:19:08.540 | SIGNALED   | pid=20212  ppid=20208  | abnormal termination by signal 15 (Terminated) [TIMEOUT], duration=2.030s
+2026-11-17 11:19:09.526 | KILL       | pid=20211  ppid=20208  | still alive after 1.00s grace, sending SIGKILL
+2026-11-17 11:19:09.546 | SIGNALED   | pid=20211  ppid=20208  | abnormal termination by signal 9 (Killed) [TIMEOUT], duration=3.037s
+2026-11-17 11:19:09.546 | FINISH     | pid=20208  ppid=20127  | all 4 children reaped, no zombies left

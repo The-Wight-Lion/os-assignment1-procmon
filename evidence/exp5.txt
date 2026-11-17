@@ -1,0 +1,2 @@
+mode=sequential wall=5.070396422
+mode=concurrent wall=1.028831689

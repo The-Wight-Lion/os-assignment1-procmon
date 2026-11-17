@@ -1,0 +1,15 @@
+$ ps -o pid,ppid,pgid,stat,etime,cmd -p 20177 --ppid 20177
+    PID    PPID    PGID STAT     ELAPSED CMD
+  20177   20175   19886 S+         00:01 ./bin/procmon -l logs/exp2.log ./bin/workload tree 3 4 ./bin/workload cpu 4 ./bin/workload sleep 4
+  20178   20177   20178 S          00:01 ./bin/workload tree 3 4
+  20179   20177   20179 R          00:01 ./bin/workload cpu 4
+  20183   20177   20183 S          00:01 ./bin/workload sleep 4
+
+$ ps -eo pid,ppid,pgid,stat,cmd | grep workload
+  20177   20175   19886 S+   ./bin/procmon -l logs/exp2.log ./bin/workload tree 3 4 ./bin/workload cpu 4 ./bin/workload sleep 4
+  20178   20177   20178 S    ./bin/workload tree 3 4
+  20179   20177   20179 R    ./bin/workload cpu 4
+  20180   20178   20178 S    ./bin/workload tree 3 4
+  20181   20178   20178 S    ./bin/workload tree 3 4
+  20182   20178   20178 S    ./bin/workload tree 3 4
+  20183   20177   20183 S    ./bin/workload sleep 4

@@ -1,0 +1,8 @@
+$ pstree -p -a 20177
+procmon,20177 -l logs/exp2.log ./bin/workload tree 3 4 ./bin/workload cpu 4 ./bin/workload sleep 4
+  |-workload,20178 tree 3 4
+  |   |-workload,20180 tree 3 4
+  |   |-workload,20181 tree 3 4
+  |   `-workload,20182 tree 3 4
+  |-workload,20179 cpu 4
+  `-workload,20183 sleep 4

@@ -1,0 +1,5 @@
+2026-11-17 11:18:51.499 | START      | pid=19981  ppid=19945  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:18:51.499 | CREATED    | pid=19982  ppid=19981  | cmd="./bin/workload abort"
+2026-11-17 11:18:51.499 | EXEC_OK    | pid=19982  ppid=19981  | program image replaced by "./bin/workload abort"
+2026-11-17 11:18:52.586 | SIGNALED   | pid=19982  ppid=19981  | abnormal termination by signal 6 (Aborted), core dumped, duration=1.087s
+2026-11-17 11:18:52.586 | FINISH     | pid=19981  ppid=19945  | all 1 children reaped, no zombies left

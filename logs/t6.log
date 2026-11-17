@@ -1,0 +1,6 @@
+2026-11-17 11:18:52.590 | START      | pid=20011  ppid=19945  | procmon supervisor started, timeout=1.00s, mode=concurrent
+2026-11-17 11:18:52.590 | CREATED    | pid=20012  ppid=20011  | cmd="./bin/workload sleep 10"
+2026-11-17 11:18:52.590 | EXEC_OK    | pid=20012  ppid=20011  | program image replaced by "./bin/workload sleep 10"
+2026-11-17 11:18:53.595 | TIMEOUT    | pid=20012  ppid=20011  | ran 1.01s > limit 1.00s, sending SIGTERM to group 20012
+2026-11-17 11:18:53.615 | SIGNALED   | pid=20012  ppid=20011  | abnormal termination by signal 15 (Terminated) [TIMEOUT], duration=1.026s
+2026-11-17 11:18:53.615 | FINISH     | pid=20011  ppid=19945  | all 1 children reaped, no zombies left

@@ -1,0 +1,5 @@
+2026-11-17 11:18:56.167 | START      | pid=20079  ppid=19945  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:18:56.168 | CREATED    | pid=20080  ppid=20079  | cmd=""
+2026-11-17 11:18:56.168 | EXEC_FAIL  | pid=20080  ppid=20079  | cmd="" error=Invalid argument
+2026-11-17 11:18:56.168 | REAPED     | pid=20080  ppid=20079  | exec failed (Invalid argument), exit code=127, duration=0.000s
+2026-11-17 11:18:56.168 | FINISH     | pid=20079  ppid=19945  | all 1 children reaped, no zombies left

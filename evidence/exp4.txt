@@ -1,0 +1,36 @@
+$ ./bin/procmon -l logs/exp4.log "./bin/workload exit 0" "./bin/workload exit 1" "./bin/workload kill 15" "./bin/workload kill 9" "./bin/workload kill 2" "./bin/workload segv"
+2026-11-17 11:19:09.548 | START      | pid=20229  ppid=20127  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:19:09.548 | CREATED    | pid=20230  ppid=20229  | cmd="./bin/workload exit 0"
+2026-11-17 11:19:09.548 | EXEC_OK    | pid=20230  ppid=20229  | program image replaced by "./bin/workload exit 0"
+2026-11-17 11:19:09.549 | CREATED    | pid=20231  ppid=20229  | cmd="./bin/workload exit 1"
+    [workload] mode=exit pid=20230 ppid=20229
+    [workload] mode=exit pid=20231 ppid=20229
+2026-11-17 11:19:09.550 | EXEC_OK    | pid=20231  ppid=20229  | program image replaced by "./bin/workload exit 1"
+2026-11-17 11:19:09.550 | CREATED    | pid=20232  ppid=20229  | cmd="./bin/workload kill 15"
+2026-11-17 11:19:09.551 | EXEC_OK    | pid=20232  ppid=20229  | program image replaced by "./bin/workload kill 15"
+2026-11-17 11:19:09.551 | CREATED    | pid=20233  ppid=20229  | cmd="./bin/workload kill 9"
+    [workload] mode=kill pid=20232 ppid=20229
+2026-11-17 11:19:09.551 | EXEC_OK    | pid=20233  ppid=20229  | program image replaced by "./bin/workload kill 9"
+2026-11-17 11:19:09.551 | CREATED    | pid=20234  ppid=20229  | cmd="./bin/workload kill 2"
+    [workload] mode=kill pid=20233 ppid=20229
+2026-11-17 11:19:09.552 | EXEC_OK    | pid=20234  ppid=20229  | program image replaced by "./bin/workload kill 2"
+2026-11-17 11:19:09.552 | CREATED    | pid=20235  ppid=20229  | cmd="./bin/workload segv"
+    [workload] mode=kill pid=20234 ppid=20229
+2026-11-17 11:19:09.553 | EXEC_OK    | pid=20235  ppid=20229  | program image replaced by "./bin/workload segv"
+2026-11-17 11:19:09.553 | EXITED     | pid=20230  ppid=20229  | normal termination, exit code=0, duration=0.005s
+2026-11-17 11:19:09.553 | EXITED     | pid=20231  ppid=20229  | normal termination, exit code=1, duration=0.004s
+2026-11-17 11:19:09.553 | SIGNALED   | pid=20232  ppid=20229  | abnormal termination by signal 15 (Terminated), duration=0.002s
+2026-11-17 11:19:09.553 | SIGNALED   | pid=20233  ppid=20229  | abnormal termination by signal 9 (Killed), duration=0.002s
+2026-11-17 11:19:09.553 | SIGNALED   | pid=20234  ppid=20229  | abnormal termination by signal 2 (Interrupt), duration=0.002s
+    [workload] mode=segv pid=20235 ppid=20229
+2026-11-17 11:19:10.659 | SIGNALED   | pid=20235  ppid=20229  | abnormal termination by signal 11 (Segmentation fault), core dumped, duration=1.107s
+2026-11-17 11:19:10.659 | FINISH     | pid=20229  ppid=20127  | all 6 children reaped, no zombies left
+
+PID     COMMAND                            RESULT     CODE   TIME(s)  
+------- ---------------------------------- ---------- ------ ---------
+20230   ./bin/workload exit 0              EXITED     0      0.005    
+20231   ./bin/workload exit 1              EXITED     1      0.004    
+20232   ./bin/workload kill 15             SIGNALED   15     0.002    
+20233   ./bin/workload kill 9              SIGNALED   9      0.002    
+20234   ./bin/workload kill 2              SIGNALED   2      0.002    
+20235   ./bin/workload segv                SIGNALED   11     1.107    
