@@ -77,9 +77,3 @@ Events: `START, CREATED, EXEC_OK, EXEC_FAIL, FORK_FAIL, EXITED, SIGNALED, REAPED
 * Supervision is by polling `waitpid(WNOHANG)` every 20 ms, so timeout accuracy is ±20 ms.
 * At most 64 children per run.
 
-## Reproduce everything (one command)
-
-```bash
-./scripts/run_all.sh      # build, tests, experiments, timing, environment info
-python3 report/make_report.py   # builds report/Assignment1_Report.pdf from the real outputs
-```
