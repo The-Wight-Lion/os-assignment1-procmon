@@ -1,0 +1,11 @@
+2026-11-17 11:43:41.264 | START      | pid=30306  ppid=19260  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:43:41.264 | CREATED    | pid=30308  ppid=30306  | cmd="./bin/workload tree 3 8"
+2026-11-17 11:43:41.264 | EXEC_OK    | pid=30308  ppid=30306  | program image replaced by "./bin/workload tree 3 8"
+2026-11-17 11:43:41.264 | CREATED    | pid=30309  ppid=30306  | cmd="./bin/workload cpu 8"
+2026-11-17 11:43:41.265 | EXEC_OK    | pid=30309  ppid=30306  | program image replaced by "./bin/workload cpu 8"
+2026-11-17 11:43:41.265 | CREATED    | pid=30313  ppid=30306  | cmd="./bin/workload sleep 8"
+2026-11-17 11:43:41.265 | EXEC_OK    | pid=30313  ppid=30306  | program image replaced by "./bin/workload sleep 8"
+2026-11-17 11:43:49.281 | EXITED     | pid=30308  ppid=30306  | normal termination, exit code=0, duration=8.017s
+2026-11-17 11:43:49.281 | EXITED     | pid=30309  ppid=30306  | normal termination, exit code=0, duration=8.017s
+2026-11-17 11:43:49.281 | EXITED     | pid=30313  ppid=30306  | normal termination, exit code=0, duration=8.016s
+2026-11-17 11:43:49.281 | FINISH     | pid=30306  ppid=19260  | all 3 children reaped, no zombies left
