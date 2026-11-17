@@ -1,11 +1,11 @@
-2026-11-17 11:55:44.266 | START      | pid=33663  ppid=19260  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:55:44.267 | CREATED    | pid=33665  ppid=33663  | cmd="./bin/workload tree 3 8"
-2026-11-17 11:55:44.268 | EXEC_OK    | pid=33665  ppid=33663  | program image replaced by "./bin/workload tree 3 8"
-2026-11-17 11:55:44.268 | CREATED    | pid=33666  ppid=33663  | cmd="./bin/workload cpu 8"
-2026-11-17 11:55:44.268 | EXEC_OK    | pid=33666  ppid=33663  | program image replaced by "./bin/workload cpu 8"
-2026-11-17 11:55:44.268 | CREATED    | pid=33667  ppid=33663  | cmd="./bin/workload sleep 8"
-2026-11-17 11:55:44.268 | EXEC_OK    | pid=33667  ppid=33663  | program image replaced by "./bin/workload sleep 8"
-2026-11-17 11:55:52.288 | EXITED     | pid=33665  ppid=33663  | normal termination, exit code=0, duration=8.021s
-2026-11-17 11:55:52.288 | EXITED     | pid=33666  ppid=33663  | normal termination, exit code=0, duration=8.020s
-2026-11-17 11:55:52.288 | EXITED     | pid=33667  ppid=33663  | normal termination, exit code=0, duration=8.020s
-2026-11-17 11:55:52.288 | FINISH     | pid=33663  ppid=19260  | all 3 children reaped, no zombies left
+2026-11-17 11:57:16.247 | START      | pid=34107  ppid=19260  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:57:16.247 | CREATED    | pid=34109  ppid=34107  | cmd="./bin/workload tree 3 25"
+2026-11-17 11:57:16.248 | EXEC_OK    | pid=34109  ppid=34107  | program image replaced by "./bin/workload tree 3 25"
+2026-11-17 11:57:16.248 | CREATED    | pid=34110  ppid=34107  | cmd="./bin/workload cpu 25"
+2026-11-17 11:57:16.248 | EXEC_OK    | pid=34110  ppid=34107  | program image replaced by "./bin/workload cpu 25"
+2026-11-17 11:57:16.249 | CREATED    | pid=34114  ppid=34107  | cmd="./bin/workload sleep 25"
+2026-11-17 11:57:16.249 | EXEC_OK    | pid=34114  ppid=34107  | program image replaced by "./bin/workload sleep 25"
+2026-11-17 11:57:41.252 | EXITED     | pid=34109  ppid=34107  | normal termination, exit code=0, duration=25.005s
+2026-11-17 11:57:41.252 | EXITED     | pid=34110  ppid=34107  | normal termination, exit code=0, duration=25.005s
+2026-11-17 11:57:41.252 | EXITED     | pid=34114  ppid=34107  | normal termination, exit code=0, duration=25.004s
+2026-11-17 11:57:41.252 | FINISH     | pid=34107  ppid=19260  | all 3 children reaped, no zombies left
