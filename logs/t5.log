@@ -1,5 +1,5 @@
-2026-11-17 11:55:28.968 | START      | pid=33522  ppid=33489  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:55:28.968 | CREATED    | pid=33523  ppid=33522  | cmd="./bin/workload abort"
-2026-11-17 11:55:28.968 | EXEC_OK    | pid=33523  ppid=33522  | program image replaced by "./bin/workload abort"
-2026-11-17 11:55:30.056 | SIGNALED   | pid=33523  ppid=33522  | abnormal termination by signal 6 (Aborted), core dumped, duration=1.088s
-2026-11-17 11:55:30.056 | FINISH     | pid=33522  ppid=33489  | all 1 children reaped, no zombies left
+2026-11-17 12:02:43.069 | START      | pid=35570  ppid=35518  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 12:02:43.069 | CREATED    | pid=35571  ppid=35570  | cmd="./bin/workload abort"
+2026-11-17 12:02:43.069 | EXEC_OK    | pid=35571  ppid=35570  | program image replaced by "./bin/workload abort"
+2026-11-17 12:02:44.165 | SIGNALED   | pid=35571  ppid=35570  | abnormal termination by signal 6 (Aborted), core dumped, duration=1.096s
+2026-11-17 12:02:44.165 | FINISH     | pid=35570  ppid=35518  | all 1 children reaped, no zombies left

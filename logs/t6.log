@@ -1,6 +1,6 @@
-2026-11-17 11:55:30.060 | START      | pid=33545  ppid=33489  | procmon supervisor started, timeout=1.00s, mode=concurrent
-2026-11-17 11:55:30.060 | CREATED    | pid=33546  ppid=33545  | cmd="./bin/workload sleep 10"
-2026-11-17 11:55:30.060 | EXEC_OK    | pid=33546  ppid=33545  | program image replaced by "./bin/workload sleep 10"
-2026-11-17 11:55:31.066 | TIMEOUT    | pid=33546  ppid=33545  | ran 1.01s > limit 1.00s, sending SIGTERM to group 33546
-2026-11-17 11:55:31.086 | SIGNALED   | pid=33546  ppid=33545  | abnormal termination by signal 15 (Terminated) [TIMEOUT], duration=1.026s
-2026-11-17 11:55:31.086 | FINISH     | pid=33545  ppid=33489  | all 1 children reaped, no zombies left
+2026-11-17 12:02:44.168 | START      | pid=35591  ppid=35518  | procmon supervisor started, timeout=1.00s, mode=concurrent
+2026-11-17 12:02:44.168 | CREATED    | pid=35592  ppid=35591  | cmd="./bin/workload sleep 10"
+2026-11-17 12:02:44.168 | EXEC_OK    | pid=35592  ppid=35591  | program image replaced by "./bin/workload sleep 10"
+2026-11-17 12:02:45.181 | TIMEOUT    | pid=35592  ppid=35591  | ran 1.01s > limit 1.00s, sending SIGTERM to group 35592
+2026-11-17 12:02:45.202 | SIGNALED   | pid=35592  ppid=35591  | abnormal termination by signal 15 (Terminated) [TIMEOUT], duration=1.033s
+2026-11-17 12:02:45.202 | FINISH     | pid=35591  ppid=35518  | all 1 children reaped, no zombies left

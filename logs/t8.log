@@ -1,5 +1,5 @@
-2026-11-17 11:55:32.626 | START      | pid=33551  ppid=33489  | procmon supervisor started, timeout=2.00s, mode=concurrent
-2026-11-17 11:55:32.626 | CREATED    | pid=33552  ppid=33551  | cmd="./bin/workload sleep 1"
-2026-11-17 11:55:32.627 | EXEC_OK    | pid=33552  ppid=33551  | program image replaced by "./bin/workload sleep 1"
-2026-11-17 11:55:33.632 | EXITED     | pid=33552  ppid=33551  | normal termination, exit code=0, duration=1.006s
-2026-11-17 11:55:33.632 | FINISH     | pid=33551  ppid=33489  | all 1 children reaped, no zombies left
+2026-11-17 12:02:46.761 | START      | pid=35619  ppid=35518  | procmon supervisor started, timeout=2.00s, mode=concurrent
+2026-11-17 12:02:46.761 | CREATED    | pid=35620  ppid=35619  | cmd="./bin/workload sleep 1"
+2026-11-17 12:02:46.762 | EXEC_OK    | pid=35620  ppid=35619  | program image replaced by "./bin/workload sleep 1"
+2026-11-17 12:02:47.780 | EXITED     | pid=35620  ppid=35619  | normal termination, exit code=0, duration=1.019s
+2026-11-17 12:02:47.780 | FINISH     | pid=35619  ppid=35518  | all 1 children reaped, no zombies left

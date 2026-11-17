@@ -1,5 +1,5 @@
-2026-11-17 11:55:33.636 | START      | pid=33567  ppid=33489  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:55:33.636 | CREATED    | pid=33568  ppid=33567  | cmd=""
-2026-11-17 11:55:33.636 | EXEC_FAIL  | pid=33568  ppid=33567  | cmd="" error=Invalid argument
-2026-11-17 11:55:33.656 | REAPED     | pid=33568  ppid=33567  | exec failed (Invalid argument), exit code=127, duration=0.020s
-2026-11-17 11:55:33.656 | FINISH     | pid=33567  ppid=33489  | all 1 children reaped, no zombies left
+2026-11-17 12:02:47.786 | START      | pid=35622  ppid=35518  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 12:02:47.786 | CREATED    | pid=35623  ppid=35622  | cmd=""
+2026-11-17 12:02:47.786 | EXEC_FAIL  | pid=35623  ppid=35622  | cmd="" error=Invalid argument
+2026-11-17 12:02:47.807 | REAPED     | pid=35623  ppid=35622  | exec failed (Invalid argument), exit code=127, duration=0.020s
+2026-11-17 12:02:47.807 | FINISH     | pid=35622  ppid=35518  | all 1 children reaped, no zombies left

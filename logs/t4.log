@@ -1,5 +1,5 @@
-2026-11-17 11:55:27.876 | START      | pid=33501  ppid=33489  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:55:27.876 | CREATED    | pid=33502  ppid=33501  | cmd="./bin/workload segv"
-2026-11-17 11:55:27.876 | EXEC_OK    | pid=33502  ppid=33501  | program image replaced by "./bin/workload segv"
-2026-11-17 11:55:28.965 | SIGNALED   | pid=33502  ppid=33501  | abnormal termination by signal 11 (Segmentation fault), core dumped, duration=1.089s
-2026-11-17 11:55:28.965 | FINISH     | pid=33501  ppid=33489  | all 1 children reaped, no zombies left
+2026-11-17 12:02:41.975 | START      | pid=35548  ppid=35518  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 12:02:41.975 | CREATED    | pid=35549  ppid=35548  | cmd="./bin/workload segv"
+2026-11-17 12:02:41.975 | EXEC_OK    | pid=35549  ppid=35548  | program image replaced by "./bin/workload segv"
+2026-11-17 12:02:43.065 | SIGNALED   | pid=35549  ppid=35548  | abnormal termination by signal 11 (Segmentation fault), core dumped, duration=1.090s
+2026-11-17 12:02:43.065 | FINISH     | pid=35548  ppid=35518  | all 1 children reaped, no zombies left
