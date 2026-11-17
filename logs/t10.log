@@ -1,8 +1,8 @@
-2026-11-17 11:18:56.170 | START      | pid=20082  ppid=19945  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:18:56.170 | CREATED    | pid=20083  ppid=20082  | cmd="./bin/workload exit 0"
-2026-11-17 11:18:56.171 | EXEC_OK    | pid=20083  ppid=20082  | program image replaced by "./bin/workload exit 0"
-2026-11-17 11:18:56.171 | CREATED    | pid=20084  ppid=20082  | cmd="./bin/workload exit 0"
-2026-11-17 11:18:56.171 | EXEC_OK    | pid=20084  ppid=20082  | program image replaced by "./bin/workload exit 0"
-2026-11-17 11:18:56.191 | EXITED     | pid=20083  ppid=20082  | normal termination, exit code=0, duration=0.021s
-2026-11-17 11:18:56.191 | EXITED     | pid=20084  ppid=20082  | normal termination, exit code=0, duration=0.020s
-2026-11-17 11:18:56.191 | FINISH     | pid=20082  ppid=19945  | all 2 children reaped, no zombies left
+2026-11-17 11:55:33.659 | START      | pid=33570  ppid=33489  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:55:33.659 | CREATED    | pid=33571  ppid=33570  | cmd="./bin/workload exit 0"
+2026-11-17 11:55:33.660 | EXEC_OK    | pid=33571  ppid=33570  | program image replaced by "./bin/workload exit 0"
+2026-11-17 11:55:33.660 | CREATED    | pid=33572  ppid=33570  | cmd="./bin/workload exit 0"
+2026-11-17 11:55:33.660 | EXEC_OK    | pid=33572  ppid=33570  | program image replaced by "./bin/workload exit 0"
+2026-11-17 11:55:33.680 | EXITED     | pid=33571  ppid=33570  | normal termination, exit code=0, duration=0.021s
+2026-11-17 11:55:33.680 | EXITED     | pid=33572  ppid=33570  | normal termination, exit code=0, duration=0.021s
+2026-11-17 11:55:33.680 | FINISH     | pid=33570  ppid=33489  | all 2 children reaped, no zombies left

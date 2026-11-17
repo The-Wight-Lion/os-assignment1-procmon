@@ -1,11 +1,11 @@
-2026-11-17 11:18:56.198 | START      | pid=20094  ppid=19945  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:18:56.198 | CREATED    | pid=20096  ppid=20094  | cmd="./bin/workload exit 0"
-2026-11-17 11:18:56.198 | EXEC_OK    | pid=20096  ppid=20094  | program image replaced by "./bin/workload exit 0"
-2026-11-17 11:18:56.198 | CREATED    | pid=20097  ppid=20094  | cmd="./bin/workload segv"
-2026-11-17 11:18:56.198 | EXEC_OK    | pid=20097  ppid=20094  | program image replaced by "./bin/workload segv"
-2026-11-17 11:18:56.199 | CREATED    | pid=20098  ppid=20094  | cmd="./bin/workload exit 3"
-2026-11-17 11:18:56.199 | EXEC_OK    | pid=20098  ppid=20094  | program image replaced by "./bin/workload exit 3"
-2026-11-17 11:18:56.199 | EXITED     | pid=20096  ppid=20094  | normal termination, exit code=0, duration=0.001s
-2026-11-17 11:18:56.219 | EXITED     | pid=20098  ppid=20094  | normal termination, exit code=3, duration=0.020s
-2026-11-17 11:18:57.293 | SIGNALED   | pid=20097  ppid=20094  | abnormal termination by signal 11 (Segmentation fault), core dumped, duration=1.095s
-2026-11-17 11:18:57.293 | FINISH     | pid=20094  ppid=19945  | all 3 children reaped, no zombies left
+2026-11-17 11:55:33.686 | START      | pid=33578  ppid=33489  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:55:33.687 | CREATED    | pid=33579  ppid=33578  | cmd="./bin/workload exit 0"
+2026-11-17 11:55:33.687 | EXEC_OK    | pid=33579  ppid=33578  | program image replaced by "./bin/workload exit 0"
+2026-11-17 11:55:33.687 | CREATED    | pid=33580  ppid=33578  | cmd="./bin/workload segv"
+2026-11-17 11:55:33.687 | EXEC_OK    | pid=33580  ppid=33578  | program image replaced by "./bin/workload segv"
+2026-11-17 11:55:33.687 | CREATED    | pid=33581  ppid=33578  | cmd="./bin/workload exit 3"
+2026-11-17 11:55:33.688 | EXEC_OK    | pid=33581  ppid=33578  | program image replaced by "./bin/workload exit 3"
+2026-11-17 11:55:33.688 | EXITED     | pid=33579  ppid=33578  | normal termination, exit code=0, duration=0.001s
+2026-11-17 11:55:33.708 | EXITED     | pid=33581  ppid=33578  | normal termination, exit code=3, duration=0.021s
+2026-11-17 11:55:34.778 | SIGNALED   | pid=33580  ppid=33578  | abnormal termination by signal 11 (Segmentation fault), core dumped, duration=1.091s
+2026-11-17 11:55:34.778 | FINISH     | pid=33578  ppid=33489  | all 3 children reaped, no zombies left

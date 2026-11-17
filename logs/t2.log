@@ -1,5 +1,5 @@
-2026-11-17 11:18:50.361 | START      | pid=19951  ppid=19945  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 11:18:50.362 | CREATED    | pid=19952  ppid=19951  | cmd="./bin/workload exit 42"
-2026-11-17 11:18:50.362 | EXEC_OK    | pid=19952  ppid=19951  | program image replaced by "./bin/workload exit 42"
-2026-11-17 11:18:50.382 | EXITED     | pid=19952  ppid=19951  | normal termination, exit code=42, duration=0.020s
-2026-11-17 11:18:50.382 | FINISH     | pid=19951  ppid=19945  | all 1 children reaped, no zombies left
+2026-11-17 11:55:27.827 | START      | pid=33495  ppid=33489  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 11:55:27.827 | CREATED    | pid=33496  ppid=33495  | cmd="./bin/workload exit 42"
+2026-11-17 11:55:27.828 | EXEC_OK    | pid=33496  ppid=33495  | program image replaced by "./bin/workload exit 42"
+2026-11-17 11:55:27.848 | EXITED     | pid=33496  ppid=33495  | normal termination, exit code=42, duration=0.021s
+2026-11-17 11:55:27.848 | FINISH     | pid=33495  ppid=33489  | all 1 children reaped, no zombies left
