@@ -1,7 +1,7 @@
-2026-11-17 12:02:45.208 | START      | pid=35607  ppid=35518  | procmon supervisor started, timeout=1.00s, mode=concurrent
-2026-11-17 12:02:45.208 | CREATED    | pid=35608  ppid=35607  | cmd="./bin/workload hang"
-2026-11-17 12:02:45.209 | EXEC_OK    | pid=35608  ppid=35607  | program image replaced by "./bin/workload hang"
-2026-11-17 12:02:46.225 | TIMEOUT    | pid=35608  ppid=35607  | ran 1.02s > limit 1.00s, sending SIGTERM to group 35608
-2026-11-17 12:02:46.735 | KILL       | pid=35608  ppid=35607  | still alive after 0.50s grace, sending SIGKILL
-2026-11-17 12:02:46.756 | SIGNALED   | pid=35608  ppid=35607  | abnormal termination by signal 9 (Killed) [TIMEOUT], duration=1.547s
-2026-11-17 12:02:46.756 | FINISH     | pid=35607  ppid=35518  | all 1 children reaped, no zombies left
+2026-11-17 12:20:25.226 | START      | pid=38074  ppid=37992  | procmon supervisor started, timeout=1.00s, mode=concurrent
+2026-11-17 12:20:25.226 | CREATED    | pid=38075  ppid=38074  | cmd="./bin/workload hang"
+2026-11-17 12:20:25.227 | EXEC_OK    | pid=38075  ppid=38074  | program image replaced by "./bin/workload hang"
+2026-11-17 12:20:26.241 | TIMEOUT    | pid=38075  ppid=38074  | ran 1.01s > limit 1.00s, sending SIGTERM to group 38075
+2026-11-17 12:20:26.751 | KILL       | pid=38075  ppid=38074  | still alive after 0.50s grace, sending SIGKILL
+2026-11-17 12:20:26.771 | SIGNALED   | pid=38075  ppid=38074  | abnormal termination by signal 9 (Killed) [TIMEOUT], duration=1.545s
+2026-11-17 12:20:26.771 | FINISH     | pid=38074  ppid=37992  | all 1 children reaped, no zombies left

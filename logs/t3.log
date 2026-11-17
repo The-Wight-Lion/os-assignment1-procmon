@@ -1,5 +1,5 @@
-2026-11-17 12:02:41.951 | START      | pid=35542  ppid=35518  | procmon supervisor started, timeout=0.00s, mode=concurrent
-2026-11-17 12:02:41.951 | CREATED    | pid=35543  ppid=35542  | cmd="./no_such_program"
-2026-11-17 12:02:41.951 | EXEC_FAIL  | pid=35543  ppid=35542  | cmd="./no_such_program" error=No such file or directory
-2026-11-17 12:02:41.971 | REAPED     | pid=35543  ppid=35542  | exec failed (No such file or directory), exit code=127, duration=0.020s
-2026-11-17 12:02:41.972 | FINISH     | pid=35542  ppid=35518  | all 1 children reaped, no zombies left
+2026-11-17 12:20:21.983 | START      | pid=38016  ppid=37992  | procmon supervisor started, timeout=0.00s, mode=concurrent
+2026-11-17 12:20:21.983 | CREATED    | pid=38017  ppid=38016  | cmd="./no_such_program"
+2026-11-17 12:20:21.983 | EXEC_FAIL  | pid=38017  ppid=38016  | cmd="./no_such_program" error=No such file or directory
+2026-11-17 12:20:22.003 | REAPED     | pid=38017  ppid=38016  | exec failed (No such file or directory), exit code=127, duration=0.020s
+2026-11-17 12:20:22.003 | FINISH     | pid=38016  ppid=37992  | all 1 children reaped, no zombies left
